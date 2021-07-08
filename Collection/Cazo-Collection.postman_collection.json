@@ -1,0 +1,2015 @@
+{
+	"info": {
+		"_postman_id": "1eb09b58-490e-405c-ad10-f9c0d1122705",
+		"name": "Cazo-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "12-2-2020",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male || Female",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "01145033268",
+							"type": "text"
+						},
+						{
+							"key": "social_login",
+							"value": "No || Yes",
+							"type": "text"
+						},
+						{
+							"key": "firebase_token",
+							"value": "",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/register",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "firebase_token",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/login",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYyNzA5NmRiNjZkZWIyM2U1MDIyNzY1Mzk5OWQwM2NjNWEyN2E3NWQyZWQ4OWYyZjA2MjdlOTEzMWQyYTZhMTYzNzZlNWE3NGVmOTg3NzAiLCJpYXQiOjE1OTIxNDM4ODAsIm5iZiI6MTU5MjE0Mzg4MCwiZXhwIjoxNjIzNjc5ODgwLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.Mu7hrZqPG0e2R_z1guzeFaaCfqbiHK-b0_1dZm3eTYE6b1BT6fAk7A8f081oF9ZPdVheZU9XFcC_5oEP-WOnn1axaI42GY-rROA3WZ6iMcmVhGKLaprChnB-vFXj1wqm-W9oRfxvkvVkgs7Qa-vntN1EuONb4jBsasE4ojbg-eWGcfYg_eWnVHSiUPbAZ24HyikPvPeHGZVFVmsq_z4YvHmsRotiJePHW9GmS0LSfikW585wBrURB6-69qVLCLMe6EckTOH_JvVYbseJDeukr9ues5Wdn_LfFp-h3TygPdwwdCDrbJ-_ZJmZ6_uRvpoZl6mxaTup83CF8eUibEA0Wab9Fv9sCvE3RJj_3UscHLLaZAyAqI06muGspTlIqLaeerk0wgz5IUKyWhuSx4XjkZndVo_hC6JRuXti-9dmRSbhUcnvThpLwPKtndX236EqtgVGWRLuhInxGazqGVY2MrlWBnXqtSknx-vUjAru8GPutP507eDXShwln6WqFISYbDX-hFUwGt_APzJTVfG0wGByZ7-SLa8NUl3jqLmkK7n34zrjAQTBU283v9wo6c_lgyNgiUQoQzoMfblMG_amLfjeQFgHPos4jCTn1ZsiLsal49sQsSlp8-Lm7m6GKRcCCuINVCsX-JCLBgmy4fSsvvRWnwU9884acrK3VQNstyE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "12-2-2020",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Mahmoud Bakr/Downloads/104356443_10223795065122278_7761285224684450442_o.jpg"
+						},
+						{
+							"key": "phone_number",
+							"value": "01145033268",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/edit_profile",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"edit_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYyNzA5NmRiNjZkZWIyM2U1MDIyNzY1Mzk5OWQwM2NjNWEyN2E3NWQyZWQ4OWYyZjA2MjdlOTEzMWQyYTZhMTYzNzZlNWE3NGVmOTg3NzAiLCJpYXQiOjE1OTIxNDM4ODAsIm5iZiI6MTU5MjE0Mzg4MCwiZXhwIjoxNjIzNjc5ODgwLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.Mu7hrZqPG0e2R_z1guzeFaaCfqbiHK-b0_1dZm3eTYE6b1BT6fAk7A8f081oF9ZPdVheZU9XFcC_5oEP-WOnn1axaI42GY-rROA3WZ6iMcmVhGKLaprChnB-vFXj1wqm-W9oRfxvkvVkgs7Qa-vntN1EuONb4jBsasE4ojbg-eWGcfYg_eWnVHSiUPbAZ24HyikPvPeHGZVFVmsq_z4YvHmsRotiJePHW9GmS0LSfikW585wBrURB6-69qVLCLMe6EckTOH_JvVYbseJDeukr9ues5Wdn_LfFp-h3TygPdwwdCDrbJ-_ZJmZ6_uRvpoZl6mxaTup83CF8eUibEA0Wab9Fv9sCvE3RJj_3UscHLLaZAyAqI06muGspTlIqLaeerk0wgz5IUKyWhuSx4XjkZndVo_hC6JRuXti-9dmRSbhUcnvThpLwPKtndX236EqtgVGWRLuhInxGazqGVY2MrlWBnXqtSknx-vUjAru8GPutP507eDXShwln6WqFISYbDX-hFUwGt_APzJTVfG0wGByZ7-SLa8NUl3jqLmkK7n34zrjAQTBU283v9wo6c_lgyNgiUQoQzoMfblMG_amLfjeQFgHPos4jCTn1ZsiLsal49sQsSlp8-Lm7m6GKRcCCuINVCsX-JCLBgmy4fSsvvRWnwU9884acrK3VQNstyE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "current_password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "new_password_confirmation",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/change_password",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"change_password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODE5YzM3MDQwZjNjMjgzNzNkNDIyZmQzMTVlMzNjYTU1ZDhhNDIzMTMxZGI3MzNmMWIwYTZhYjJkZmNmZDZlOWI3ZjRjN2UzYmQwMmM1NGYiLCJpYXQiOjE1OTIxNDU3NjgsIm5iZiI6MTU5MjE0NTc2OCwiZXhwIjoxNjIzNjgxNzY4LCJzdWIiOiIxNCIsInNjb3BlcyI6W119.pca-lXNCkNpCeNWrBYyUPT8iyIzwfDCI1EuBVufT_voi3GSvobalfgtWjK1ypGjvkyA9DfCArU4-XttqeCEGPos5q3O313YdiPYnb1v_nn8ihqXwQByzueXTT6jwAooqVr9FxrlPA8nK3rrFuq0KBMluEaYK9O6OP44uGnWc9A3pSLKO2bMsyqYS-8fp4kU9e5oxlfONFVKnXOMJ7Cy-JpTiB_qAnk2uf4NsEONd29_Ypmf0Nr3QM-3q6ZCgtlPg1Pkig1BojW0Z3mUAgxoe68syyk5ddDjdKMiBU4TI2awpbCUrEhvVoSNwdrJEIaQYus3s3YnoIM6dgPAsuCfJUPz52qd9hFFeM9R8EsAEdOtd5lXGSGefsZyjbILUgyHrPFi1Zj5cR4S7orrNYBEJGKZqjd_KkaIzyLBPo9Ic2WQmVc_5DCttfYPaIrFivCp056zRz3FhFpJnOlmvNLc3CeGMIdbCr3qBbzuOIPJjo3wPvOX3noWvIhebT6c67GbC7pbHSeaL3zVe2do3G8-aiLdcHJ26IArO5WC1oIHKY4PG-5_civzqcxkJMazkV-xkGfaMNpNcopP5Gf-Rv3g8NMiPUv5cuXaXBsDswGBaPeZ5J5mMK8ur7AKJeDo0EWic-TXiMT_J8rhSLeHJE4QuTtIz6k_ENuHyDMXHm0sL81A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/logout",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Regions API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/regions",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "One Region Suburbs API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/suburbs/1",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"suburbs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home Parent Categories API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/categories",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sub Categories API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/subcategories/1",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"subcategories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ads API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/ads",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"ads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAQS API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/faqs",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"faqs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Social Media Links API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/informative/social_links",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"informative",
+						"social_links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Privecy & Policy API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/informative/privecy",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"informative",
+						"privecy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Terms & Conditions API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/informative/terms_conditions",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"informative",
+						"terms_conditions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "About App API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/informative/about",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"informative",
+						"about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contact Us API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mahmoud",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mahmoud@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello worldHello world Hello world Hello world Hello world Hello worldHello world Hello world Hello world",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "01145033268",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/contactus",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"contactus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complain Types API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/complain_types",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"complain_types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Client Data API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYyNzA5NmRiNjZkZWIyM2U1MDIyNzY1Mzk5OWQwM2NjNWEyN2E3NWQyZWQ4OWYyZjA2MjdlOTEzMWQyYTZhMTYzNzZlNWE3NGVmOTg3NzAiLCJpYXQiOjE1OTIxNDM4ODAsIm5iZiI6MTU5MjE0Mzg4MCwiZXhwIjoxNjIzNjc5ODgwLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.Mu7hrZqPG0e2R_z1guzeFaaCfqbiHK-b0_1dZm3eTYE6b1BT6fAk7A8f081oF9ZPdVheZU9XFcC_5oEP-WOnn1axaI42GY-rROA3WZ6iMcmVhGKLaprChnB-vFXj1wqm-W9oRfxvkvVkgs7Qa-vntN1EuONb4jBsasE4ojbg-eWGcfYg_eWnVHSiUPbAZ24HyikPvPeHGZVFVmsq_z4YvHmsRotiJePHW9GmS0LSfikW585wBrURB6-69qVLCLMe6EckTOH_JvVYbseJDeukr9ues5Wdn_LfFp-h3TygPdwwdCDrbJ-_ZJmZ6_uRvpoZl6mxaTup83CF8eUibEA0Wab9Fv9sCvE3RJj_3UscHLLaZAyAqI06muGspTlIqLaeerk0wgz5IUKyWhuSx4XjkZndVo_hC6JRuXti-9dmRSbhUcnvThpLwPKtndX236EqtgVGWRLuhInxGazqGVY2MrlWBnXqtSknx-vUjAru8GPutP507eDXShwln6WqFISYbDX-hFUwGt_APzJTVfG0wGByZ7-SLa8NUl3jqLmkK7n34zrjAQTBU283v9wo6c_lgyNgiUQoQzoMfblMG_amLfjeQFgHPos4jCTn1ZsiLsal49sQsSlp8-Lm7m6GKRcCCuINVCsX-JCLBgmy4fSsvvRWnwU9884acrK3VQNstyE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/client",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complain API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzE3YjY1Yzc5MzE3NmI5MjEyMmJiODhlM2FhZjY0ZTMxZTJjZDE2Y2VkNmQxMjkwYzY0YTdhMjhiYWVjNjE5MGRhMGNhMGU2MTViNzU3ZDUiLCJpYXQiOjE1OTI4MTExNDEsIm5iZiI6MTU5MjgxMTE0MSwiZXhwIjoxNjI0MzQ3MTQwLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.CX89tsQgme2zyPmca9WzuxNMZps4RYuHk4add7Hw5c0fMUAOlhrisDkNJX0qpiLPqaRHNmn4_WGwT0CEa0vujSRBjCZK2ID6e8nYAQARar21UfHh1c8Bugs_plyYMpiYzuMB49BUfUfpADFDDzyV9pG8pWNbmXwUaDoOw9DSjyu5pn06jTGEiGlbqivUqc2Lsv6GhXcGW2eFVTGMDe4PnyQvnNqF7vAKucsV4w6ZVUAEsjjmIDpsobYH-eHAP5vsfajp6tNb2aRnqXM9OHjBjxSq4_zpjLnK85xR0Q3FbzHSgsju5SZ8F3ftGPo0bi33dZr-y4zm9NK5f4n9QDkHDCC9L5I_yylmLzhIcGThHIMHU38f_g2SlTX5phmsh5Z-b1YZehM3a327sPw5dkKpa8f95gRN5oeoZEEpyfN2tgWQcc5tB9LzkfROX3mf9tpIgKlndJjZ3Q94F__aW2jjhqcPgi4Bg9b_4InWDRENu0F4kFuux0pAYCshw7OAno3K7kopujXwiRC_r7U6LpZMKykeEhIKrI7UlES_6QCKXuJ4KeQjC7XFVfEUHZ4-Di1qr-BP8HjCOdaHvhQb8WPFNZAL6nNT_8RBBW0-qch4o1bYVO7pDaSXLXhYn_GmuYGhfgpO8oT2MJVFh1edEOqR9pcY40bPexSEBavp5n4G-JI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello worldHello world Hello world Hello world Hello world Hello worldHello world Hello world Hello world",
+							"type": "text"
+						},
+						{
+							"key": "booking_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/complains",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"complains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VIP Offers API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/offers/vip",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"offers",
+						"vip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "24 Hours Offers API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/offers/24hours",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"offers",
+						"24hours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All specializations API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "buff",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "region_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category_id",
+							"value": "20",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "subcategory_id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "Male || Female",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "minPrice",
+							"value": "18",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "maxPrice",
+							"value": "135",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "pageLimit",
+							"value": "15",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sort_by",
+							"value": "created_at || fee",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sort_type",
+							"value": "desc || asc",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "clinic_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "accept_code",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "open",
+							"value": "1 for today || 2 for tomorrow || 3 for any day ",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/specializations",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"specializations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Under 100 Offers API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/offers/under100",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"offers",
+						"under100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brands API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/brands",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Favourite & Unfavourite a specialization",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTE5MmFkN2UyMDIzMTcwN2Q2OTUxMjhjODgwZmE3YzMyZGJlYjhiMjkyZDRiNTM0ZThlM2NkYjYwNGI2MTBhZWY4NzJkNDliYmNlOTU1OGYiLCJpYXQiOjE1OTQ5MDQxODEsIm5iZiI6MTU5NDkwNDE4MSwiZXhwIjoxNjI2NDQwMTgxLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.oBnR2Woo59LYyVQvDGQIVT7TmPv_AKSbEy1pwlEEKNNm8aEIQldxK_de5BYFw8kKoO7ERP4TtsBMVoSrxBOMq7YuNRww_HrHR0XggEx6GKbX5MwLH2k446-Ym6CA940zhHCHiUbW5WxkZXRREkZ2TuYKIkhiwjbM2N-Yo-4qDELjJuQYIN9BvQH9ZkVEY3KaNEKRavTtMrO3teMikLSUZdhT1GTxh6eknmiRmz_ZjVy8HvbPdmsYPVqpVm20iKWVYBxgmXMFggJ6HrTh7h4GyGhaqtAWLPTbBqdBvGmH54CbYYMMYg1HW-9W2sd-X1S1KDcLTlR391xg7eD1Dj79ZcQzKJdGX_6ZLKpd7NFGgjAZBOYgyRKZkXQ0DrvTLdJiKJ6MFgp2xhfX3LAA08w2u37cVdGL1DWh3XSdMdmuj9JA4NTQytqoL-HPlCOTFWoldyc3NByFH7snIFBjPx0pLvDdOrpdAFDpEUzGkbImBP4lIbscsoCLJ3kKDGQDLBkni0ojIqojEW9TtsMuRkgI46w7KPGizptKWdjvK0QL06DUEclxc8j2iMg0VxveE2FiAWIcSuv9FhOJAbS9eOi596cOrVQNpwkzgjChEdruK7RbIbkjce5qQ15cfEf_k2igk0qA-EMY13fBUMm8F7YIX6RuTXrnN-rXFlE5J0GE6D4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "specialization_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/favourite",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"favourite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client Favourite List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTE5MmFkN2UyMDIzMTcwN2Q2OTUxMjhjODgwZmE3YzMyZGJlYjhiMjkyZDRiNTM0ZThlM2NkYjYwNGI2MTBhZWY4NzJkNDliYmNlOTU1OGYiLCJpYXQiOjE1OTQ5MDQxODEsIm5iZiI6MTU5NDkwNDE4MSwiZXhwIjoxNjI2NDQwMTgxLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.oBnR2Woo59LYyVQvDGQIVT7TmPv_AKSbEy1pwlEEKNNm8aEIQldxK_de5BYFw8kKoO7ERP4TtsBMVoSrxBOMq7YuNRww_HrHR0XggEx6GKbX5MwLH2k446-Ym6CA940zhHCHiUbW5WxkZXRREkZ2TuYKIkhiwjbM2N-Yo-4qDELjJuQYIN9BvQH9ZkVEY3KaNEKRavTtMrO3teMikLSUZdhT1GTxh6eknmiRmz_ZjVy8HvbPdmsYPVqpVm20iKWVYBxgmXMFggJ6HrTh7h4GyGhaqtAWLPTbBqdBvGmH54CbYYMMYg1HW-9W2sd-X1S1KDcLTlR391xg7eD1Dj79ZcQzKJdGX_6ZLKpd7NFGgjAZBOYgyRKZkXQ0DrvTLdJiKJ6MFgp2xhfX3LAA08w2u37cVdGL1DWh3XSdMdmuj9JA4NTQytqoL-HPlCOTFWoldyc3NByFH7snIFBjPx0pLvDdOrpdAFDpEUzGkbImBP4lIbscsoCLJ3kKDGQDLBkni0ojIqojEW9TtsMuRkgI46w7KPGizptKWdjvK0QL06DUEclxc8j2iMg0VxveE2FiAWIcSuv9FhOJAbS9eOi596cOrVQNpwkzgjChEdruK7RbIbkjce5qQ15cfEf_k2igk0qA-EMY13fBUMm8F7YIX6RuTXrnN-rXFlE5J0GE6D4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/favourite_list",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"favourite_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Review API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjk3NGMxNzAzNDlmMjBhM2ViYzliZDkyNzc5ZWViNDE0ZDkxMWQwZmU3ODY1MDU1YTAyZjk2MGQ1NmM4MmRlOWUxNTA1MTc1NzA2MmU0ZGUiLCJpYXQiOjE1OTUxNjI0MjgsIm5iZiI6MTU5NTE2MjQyOCwiZXhwIjoxNjI2Njk4NDI4LCJzdWIiOiIxNCIsInNjb3BlcyI6W119.dWnakKS6-HVt_vz8wyEESj-uzdvEHOcg3X59UKWivjRmNZs7tga4T3JI3nK901JpLxrOtPKiWqgB9p52jZOk3WbeZud8NeYM0RQJ1hADHcyHb1A2IGKachNrrO2Cz73_M8c5KICA0wgpDWwYZelYO1v8YhHEOHJJoiehF5cogWWCbzv-L1NKCRRTaMKPSW8q8Ivr8hbUyUDAHlfMRwdQuHMzgR6csB9Xbp_CLg84V6Kq4xQ6ZqyxeV5Cwu068kDL5xIWjAsb6dQQBuR7f-pu5xDanL1W-Z_4C9H7L8HDReB696kg5LYSLZR2Fk1tFep6W_OoJNoVeoXx2EYwjkEiY7RejwRqeemH4jkbAd8SgImHM2Gq1WApJEArOzon9FkmBhZvuTi_DC9WWZ5lTjKgmYb1QqqfBemr7K4_ME4J34Os-tAeodb60I7Kj6tU2lvSraps0OjnpWbvpocXE40Ljr5cOf916U8jAyamfNNMIyqpLJK9vqaMgWIWZDNMz_ltJKFAASLFoWqKOMeay_14Qn1pHxJgy7oOorJ3iAPTjF4Q-DxqTfBS4XYtQUWRVSYzE0EDKa6M9VWevvBAyUFJoTrshuv_JN2hb92W-x_gS5D9S01cPNRmhDD--HUuTsnvXswymF26AflmAu-E1nI0CTg8H1LPUYrEXUf-Z48SXzg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "specialization_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "ratting",
+							"type": "text"
+						},
+						{
+							"key": "rate",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/review",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specialization Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/specialization/5",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"specialization",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client Cancel Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDg5MDc4OWUwZDhkY2Q3YmJhYmRlNGM5YjUzMjNiZWU3YzVlOTdlMmNmYTVlYWI5NDBiYWVjY2MyYmE2MGM1NGJhNjMxZWQ0NGU1YjVjZTkiLCJpYXQiOjE1OTU0MzY1MzIsIm5iZiI6MTU5NTQzNjUzMiwiZXhwIjoxNjI2OTcyNTMyLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.NUJP7JMffjx3fMoEGORD0FKItzXl7kZSF9afs0-NMk9WsglVQ7SLbYUM4CvZw_Uyyyg9mCcIH4M-HVrHCRwGl4goy7Rz0ivgiWpKUsn-ITz3NLLpnXs2Mkd63VFu3OOVs3cGxJzikaMfwIkTXou1Dt6ayRw2xBpVj3epos1883CXAz4pWb9GFTcKJfEwv5FW2hyvOpyxUaATImZmt8fzuDdRj7yefKaXfvZRXnFfbuD6Uw9RSH74-Wzj8OT-5HWqKhKNJLBAFCvHJnACaXOWhcMbPguM_ym9HVxBQswBdD7_Kr8zMO-CwxaFwIm54-Jja8-5DBCGqLkmwD3iAt01If8-3NTYvjPSs19IQWOoFlFTJhWbXlh1qNkAno2U0we7eJDEe04yXy4qbjpXj8844V99iKfT774rskyypr9_qQlzi_C48rwzN9Nd6EZQRPHwEFskGu47IYQwd7FTO2qi3jeL5aiBCUb1gskzPLC8ISc-Q_h0FSifZ29UpRNRDhp2A06vdVYtjryBM5vk-DCVAvzDIucATv8yP7FbfUl7ljirpE2KX_Q3h0dy0XSQj76ZOWxxL9bkAfT9NXWC1_8v1GfEKlYnRQ6zEvYpHNWNvulyms3i2i9tk8XAXNlJFnzp0uV-ZUna9DGS0oibyX72oTf6o08GAtSme3CPFc1Shi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/bookings/cancel/5",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"bookings",
+						"cancel",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client Booking Lists",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDg5MDc4OWUwZDhkY2Q3YmJhYmRlNGM5YjUzMjNiZWU3YzVlOTdlMmNmYTVlYWI5NDBiYWVjY2MyYmE2MGM1NGJhNjMxZWQ0NGU1YjVjZTkiLCJpYXQiOjE1OTU0MzY1MzIsIm5iZiI6MTU5NTQzNjUzMiwiZXhwIjoxNjI2OTcyNTMyLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.NUJP7JMffjx3fMoEGORD0FKItzXl7kZSF9afs0-NMk9WsglVQ7SLbYUM4CvZw_Uyyyg9mCcIH4M-HVrHCRwGl4goy7Rz0ivgiWpKUsn-ITz3NLLpnXs2Mkd63VFu3OOVs3cGxJzikaMfwIkTXou1Dt6ayRw2xBpVj3epos1883CXAz4pWb9GFTcKJfEwv5FW2hyvOpyxUaATImZmt8fzuDdRj7yefKaXfvZRXnFfbuD6Uw9RSH74-Wzj8OT-5HWqKhKNJLBAFCvHJnACaXOWhcMbPguM_ym9HVxBQswBdD7_Kr8zMO-CwxaFwIm54-Jja8-5DBCGqLkmwD3iAt01If8-3NTYvjPSs19IQWOoFlFTJhWbXlh1qNkAno2U0we7eJDEe04yXy4qbjpXj8844V99iKfT774rskyypr9_qQlzi_C48rwzN9Nd6EZQRPHwEFskGu47IYQwd7FTO2qi3jeL5aiBCUb1gskzPLC8ISc-Q_h0FSifZ29UpRNRDhp2A06vdVYtjryBM5vk-DCVAvzDIucATv8yP7FbfUl7ljirpE2KX_Q3h0dy0XSQj76ZOWxxL9bkAfT9NXWC1_8v1GfEKlYnRQ6zEvYpHNWNvulyms3i2i9tk8XAXNlJFnzp0uV-ZUna9DGS0oibyX72oTf6o08GAtSme3CPFc1Shi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/bookings",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client Make Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjRkNzlkYmQxOWViMDkwZGQ4Y2IyOGQyNmFmOTMzOTk1ZTJkMTdmNzViNDFmZjg5NmNmYTdlNzVkY2EzN2NlNjJkNzY0M2QyZGM1MGRmYjEiLCJpYXQiOjE1OTU1MTk0OTMsIm5iZiI6MTU5NTUxOTQ5MywiZXhwIjoxNjI3MDU1NDkzLCJzdWIiOiIxNCIsInNjb3BlcyI6W119.NXHfNW8Dv5jfirn_WS1Vf664ZOgJ4LV2u1WzIMD5NqK4OTtf9yMJVEch6rSZRt4STF698EO_FaiFAgmY3KRMAbOyaBKgmTwYJBd80KpXm2C5NHMoeqQLY2OwMXxgdNZG-Hi5unhi0c5VfmzfckmvULBveHNnyU_ub2WmTUHqMJ8NgpqEkCmFvXw7sQCVum2J2uCKxx12ZOIzj13YrM8vJaUnqQr57Qefw6ISFeZL51mFBfEMUR6XN3RJRNEq7HTjFFoZ0O5Goa-_jqgRAbYqxMI0SiymHct9CaHmiC0agwxaTmugEWgLtS5B4JyQDnv4lal5c_7cy8SARaH6nkYdyDqrP-cxqbCji_8NT_b3a80YcS-l2p9ocq78q-s8w51t5MkNEpgK6Yzk0HGpkM2e8H1t7B2ms7KkyZio_8-9jouomgtc1c-J69WLGHH7yfIkPAdaYG82Bzuh9ysfzBuRIdtUfefryBlo0DJWpXVFClXsgIpnxE9H4d7p-MXuH6y9qCtT978Idwut5ZevXsyoOdx__K6ImgbJv0cyqMl7xHnPRGPm96bKfRqzGOFSqK6lKMTACPx-2uG4HIEOXPynWeHbY9Ik35cAe5oGDKXxWqTwN5EKFgbKK32cKKS9Du90shK9oHvfix3bDiPiCG-eFi36chrcFlcNvCXxRoZat2U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "specialization_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "hour_id",
+							"value": "77",
+							"type": "text"
+						},
+						{
+							"key": "day",
+							"value": "26-7-2020",
+							"type": "text"
+						},
+						{
+							"key": "images[0]",
+							"type": "file",
+							"src": "/C:/Users/Mahmoud Bakr/Downloads/benefitsoflaserhairremoval.jpeg"
+						},
+						{
+							"key": "images[1]",
+							"type": "file",
+							"src": "/C:/Users/Mahmoud Bakr/Downloads/522925920_main.jpg"
+						},
+						{
+							"key": "coupon",
+							"value": "16QDT4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/booking",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clinics API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clinics",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clinics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Parent Categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/categories/all",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"categories",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Vip offers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/offers/vip/all",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"offers",
+						"vip",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Under100 Offers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/offers/under100/all",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"offers",
+						"under100",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All 24 Hours Offers API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/offers/24hours/all",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"offers",
+						"24hours",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking Data API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGVlY2NjNGMwNDkwYTViYWEyZDdiNmQ4ZmExNmRhM2MwMDRjNWUzM2VkOTQwMTBmMjIyYzJlZGNlM2ZmNDZmOGIxMTRmNjIxYjJlNTk5N2UiLCJpYXQiOjE1OTU3NTEwODYsIm5iZiI6MTU5NTc1MTA4NiwiZXhwIjoxNjI3Mjg3MDg2LCJzdWIiOiIxNCIsInNjb3BlcyI6W119.CIIUphfBjfj7FGYGhyy9-RFUqodgk5RL1eDZfmg69uHF14z1gBb8BKZtbPcIdFUjLqRVGUJGafKCftgsSulcWMsQgSWp3iA9B150fi-KcOH5UQd3jukNoSt2-uHhKr9XxVuAIGfp_E6w0_c5_8gzMSQtVp6j_8uNuvIHZ3s_8Kf8-CtRiypDeEp4BX6R-z1yihC_HdIT89SkZMFE4uY-q0f6JE_DGGrMYtUfiryN8--VoZ0P20vmdwUShUYAcnvTj_W8cnfIlIkqx-XoYfm76RBxl-9djOw-eBu1a6Qq8XbwAJ_wuUshAj67q8fezmY5u68fPKGUZYk-ibThQyrgcykiEGqEgTWChrPZ3FH7Jrozu5UxhKdjSOSoH7bswWvUDwtuwGzT2DaW-eSemaJkIhNCCa3mCTY4h1nhW53p3fGcaZ72sqovok_MYup2xCKvMkAOTS_9v9-gL5apTGoCPeNX4SpoPgNS2yMAXww6_wzyo9JESUzypFU3gUs1XIRigHMr-1z7FQJVx0zOV1_Du-ijSA33B9f4l9H7qqaKNmr4DZTstvj4UDCXgu5XakK2c8GfuryDK6w_OkGwWt7xYn1eBHwweY-7bgEr1lyvSqAknOkmenf4J5sWlHmVB1MjSnFDm105cRtkPslUKculqx1Ivo66ZvvhZbPF7pUu5b0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/booking/1",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"booking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Wallet API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGVlY2NjNGMwNDkwYTViYWEyZDdiNmQ4ZmExNmRhM2MwMDRjNWUzM2VkOTQwMTBmMjIyYzJlZGNlM2ZmNDZmOGIxMTRmNjIxYjJlNTk5N2UiLCJpYXQiOjE1OTU3NTEwODYsIm5iZiI6MTU5NTc1MTA4NiwiZXhwIjoxNjI3Mjg3MDg2LCJzdWIiOiIxNCIsInNjb3BlcyI6W119.CIIUphfBjfj7FGYGhyy9-RFUqodgk5RL1eDZfmg69uHF14z1gBb8BKZtbPcIdFUjLqRVGUJGafKCftgsSulcWMsQgSWp3iA9B150fi-KcOH5UQd3jukNoSt2-uHhKr9XxVuAIGfp_E6w0_c5_8gzMSQtVp6j_8uNuvIHZ3s_8Kf8-CtRiypDeEp4BX6R-z1yihC_HdIT89SkZMFE4uY-q0f6JE_DGGrMYtUfiryN8--VoZ0P20vmdwUShUYAcnvTj_W8cnfIlIkqx-XoYfm76RBxl-9djOw-eBu1a6Qq8XbwAJ_wuUshAj67q8fezmY5u68fPKGUZYk-ibThQyrgcykiEGqEgTWChrPZ3FH7Jrozu5UxhKdjSOSoH7bswWvUDwtuwGzT2DaW-eSemaJkIhNCCa3mCTY4h1nhW53p3fGcaZ72sqovok_MYup2xCKvMkAOTS_9v9-gL5apTGoCPeNX4SpoPgNS2yMAXww6_wzyo9JESUzypFU3gUs1XIRigHMr-1z7FQJVx0zOV1_Du-ijSA33B9f4l9H7qqaKNmr4DZTstvj4UDCXgu5XakK2c8GfuryDK6w_OkGwWt7xYn1eBHwweY-7bgEr1lyvSqAknOkmenf4J5sWlHmVB1MjSnFDm105cRtkPslUKculqx1Ivo66ZvvhZbPF7pUu5b0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/wallet",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User charge Wallet API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGVlY2NjNGMwNDkwYTViYWEyZDdiNmQ4ZmExNmRhM2MwMDRjNWUzM2VkOTQwMTBmMjIyYzJlZGNlM2ZmNDZmOGIxMTRmNjIxYjJlNTk5N2UiLCJpYXQiOjE1OTU3NTEwODYsIm5iZiI6MTU5NTc1MTA4NiwiZXhwIjoxNjI3Mjg3MDg2LCJzdWIiOiIxNCIsInNjb3BlcyI6W119.CIIUphfBjfj7FGYGhyy9-RFUqodgk5RL1eDZfmg69uHF14z1gBb8BKZtbPcIdFUjLqRVGUJGafKCftgsSulcWMsQgSWp3iA9B150fi-KcOH5UQd3jukNoSt2-uHhKr9XxVuAIGfp_E6w0_c5_8gzMSQtVp6j_8uNuvIHZ3s_8Kf8-CtRiypDeEp4BX6R-z1yihC_HdIT89SkZMFE4uY-q0f6JE_DGGrMYtUfiryN8--VoZ0P20vmdwUShUYAcnvTj_W8cnfIlIkqx-XoYfm76RBxl-9djOw-eBu1a6Qq8XbwAJ_wuUshAj67q8fezmY5u68fPKGUZYk-ibThQyrgcykiEGqEgTWChrPZ3FH7Jrozu5UxhKdjSOSoH7bswWvUDwtuwGzT2DaW-eSemaJkIhNCCa3mCTY4h1nhW53p3fGcaZ72sqovok_MYup2xCKvMkAOTS_9v9-gL5apTGoCPeNX4SpoPgNS2yMAXww6_wzyo9JESUzypFU3gUs1XIRigHMr-1z7FQJVx0zOV1_Du-ijSA33B9f4l9H7qqaKNmr4DZTstvj4UDCXgu5XakK2c8GfuryDK6w_OkGwWt7xYn1eBHwweY-7bgEr1lyvSqAknOkmenf4J5sWlHmVB1MjSnFDm105cRtkPslUKculqx1Ivo66ZvvhZbPF7pUu5b0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "charged",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/charge",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"charge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Coupon valid API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/coupon/16QDT4",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"coupon",
+						"16QDT4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clinic Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clinics/2",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clinics",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Slider API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/sliders/",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"sliders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Code for verfication API & Resend code API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_number",
+							"value": "+201145033268",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/send_code",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"send_code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Code is Valid API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "23474",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/check_code",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"check_code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forget Password API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "23474",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "confirm_new_password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/forget_password",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"forget_password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Notifiactions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODhjNWY4Y2E5MjVhOGEwZjdjOWJiMTAwMDNkNGQ5YTI4NWViN2FiZGUxNDE4NGZhMmQ4MDQ0MDA4MGExN2NjNDdiOWI1MmU5YTMyMDY2MjYiLCJpYXQiOjE1OTY3MTExNzIsIm5iZiI6MTU5NjcxMTE3MiwiZXhwIjoxNjI4MjQ3MTcyLCJzdWIiOiI0OSIsInNjb3BlcyI6W119.bNoFOTJFZKd4-qE98qNPVloTIUbx59-qIZ5JSXkmww0GfjXScB_jkgnqBCajBfvhGOM3NX1Ak0sEyAcQGVAhjVoCsOBswaozlrAYFnscI65SxucKoNpMoIz2bHmeLDn5qWH5UY0ecVayNLE2LzVTPJYT0q6bKDICD7Xi8yQAtecpoLwQmXVZAdUAVF1Sm2e2H5oUat0VDoPu5MqhJ3LHdREEyL5_09PDQig6SQ7U5pZvQDaXSZ4qOdPjfDDfXNa-HkeJmvSnEwPpqXJu0BVbl1DCT0q6x9Z1CkTjBicj4N2lFcBTDF-axrFrM_-fDiM2S32KBjqYlwLZCg5vC_U8K4_qMMGcqpPJYFgvd1G45qQI22HP7bWImQ5vbfUdLA884MGRddq2wyMK_48WVnMIjA46xzwskzqNLQgBgNZlquhNQjCRIusNOTtPwSt4Nez9IrYIxX1sQqN2HnOhxVXWNIHEDbj85fbvlCnA941SB7prN7YoUx77W52QvhPnIFDhIgn8Ryqjt5ukN4aPu155Fgk1c3J3mKkV68SsvG_76ZtUSbhiYBOmYnVvzLEDctpE3ggbncSkBSi6uSu7h0D2cINk0CoFi7rjVRDND0xb3T1FozYbjTb9yZveV1eVFdilgQFvce04Y82yg72c5DtVAiw0zjMh3DcEfSAN4LB502Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/notifications",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Unread Notifications Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/notifications/count",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"notifications",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Social login API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "social_login",
+							"value": "facebook || google || twitter",
+							"type": "text"
+						},
+						{
+							"key": "facebook_id",
+							"value": "send if login with facebook",
+							"type": "text"
+						},
+						{
+							"key": "google_id",
+							"value": "send if login with google",
+							"type": "text"
+						},
+						{
+							"key": "twitter_id",
+							"value": "send if login with twitter",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "firebase_key",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cazo.ae/dashboard/api/clients/social_login",
+					"protocol": "https",
+					"host": [
+						"cazo",
+						"ae"
+					],
+					"path": [
+						"dashboard",
+						"api",
+						"clients",
+						"social_login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
